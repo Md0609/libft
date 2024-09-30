@@ -1,18 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_lstiter_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mdios-el <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/16 15:54:14 by mdios-el          #+#    #+#             */
-/*   Updated: 2024/09/25 20:57:58 by mdios-el         ###   ########.fr       */
+/*   Created: 2024/09/30 15:24:43 by mdios-el          #+#    #+#             */
+/*   Updated: 2024/09/30 15:25:28 by mdios-el         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalpha(int c)
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
+	while (lst)
+	{
+		(*f)(lst->content);
+		lst = lst->next;
+	}
 }

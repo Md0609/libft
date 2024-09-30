@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-static size_t	w_count(char const *str, char delimiter)
+size_t	w_count(char const *str, char delimiter)
 {
 	int	count;
 	int	i;
@@ -34,7 +34,7 @@ static size_t	w_count(char const *str, char delimiter)
 	return (count);
 }
 
-static size_t	get_w_len(char const *s, char c)
+size_t	get_w_len(char const *s, char c)
 {
 	size_t	len;
 
@@ -44,7 +44,7 @@ static size_t	get_w_len(char const *s, char c)
 	return (len);
 }
 
-static void	free_split(char **free_s, int i)
+void	free_split(char **free_s, int i)
 {
 	while (i > 0)
 	{
