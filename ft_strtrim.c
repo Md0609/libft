@@ -6,13 +6,13 @@
 /*   By: mdios-el <mdios-el@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 19:07:49 by mdios-el          #+#    #+#             */
-/*   Updated: 2024/09/26 19:49:12 by mdios-el         ###   ########.fr       */
+/*   Updated: 2024/10/02 20:10:08 by mdios-el         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	is_in_set(char c, char const *set)
+static int	is_in_set(char c, char const *set)
 {
 	int	i;
 
@@ -26,7 +26,7 @@ int	is_in_set(char c, char const *set)
 	return (0);
 }
 
-int	get_start_index(char const *input_str, char const *set)
+static int	get_start_index(char const *input_str, char const *set)
 {
 	int	i;
 
@@ -36,7 +36,7 @@ int	get_start_index(char const *input_str, char const *set)
 	return (i);
 }
 
-int	get_end_index(char const *input_str, char const *set)
+static int	get_end_index(char const *input_str, char const *set)
 {
 	int	input_str_len;
 
@@ -46,7 +46,7 @@ int	get_end_index(char const *input_str, char const *set)
 	return (input_str_len);
 }
 
-char	*cpy_trim_str(char const *s1, int start_index, int end_index)
+static char	*cpy_trim_str(char const *s1, int start_index, int end_index)
 {
 	int		trim_len;
 	char	*result;
