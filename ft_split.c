@@ -6,13 +6,13 @@
 /*   By: mdios-el <mdios-el@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 19:51:07 by mdios-el          #+#    #+#             */
-/*   Updated: 2024/09/27 23:38:11 by mdios-el         ###   ########.fr       */
+/*   Updated: 2024/10/02 20:07:52 by mdios-el         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	w_count(char const *str, char delimiter)
+static size_t	w_count(char const *str, char delimiter)
 {
 	int	count;
 	int	i;
@@ -34,7 +34,7 @@ size_t	w_count(char const *str, char delimiter)
 	return (count);
 }
 
-size_t	get_w_len(char const *s, char c)
+static size_t	get_w_len(char const *s, char c)
 {
 	size_t	len;
 
@@ -44,7 +44,7 @@ size_t	get_w_len(char const *s, char c)
 	return (len);
 }
 
-void	free_split(char **free_s, int i)
+static void	free_split(char **free_s, int i)
 {
 	while (i > 0)
 	{

@@ -6,7 +6,7 @@
 /*   By: mdios-el <mdios-el@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/17 16:21:19 by mdios-el          #+#    #+#             */
-/*   Updated: 2024/09/28 08:24:17 by mdios-el         ###   ########.fr       */
+/*   Updated: 2024/10/02 19:55:27 by mdios-el         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,12 +58,6 @@ typedef struct s_list
 	void			*content;
 	struct s_list	*next;
 }					t_list;
-
-typedef struct s_split_next
-{
-	size_t	start;
-	size_t	length;
-}	t_split_next;
 
 t_list		*ft_lstnew(void *content);
 t_list		*ft_lstlast(t_list *lst);

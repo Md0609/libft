@@ -6,13 +6,13 @@
 /*   By: mdios-el <mdios-el@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/27 23:33:07 by mdios-el          #+#    #+#             */
-/*   Updated: 2024/09/28 03:30:11 by mdios-el         ###   ########.fr       */
+/*   Updated: 2024/10/02 20:06:52 by mdios-el         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	size_n(int n)
+static int	size_n(int n)
 {
 	int	count;
 
